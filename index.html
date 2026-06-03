@@ -767,7 +767,7 @@ document.getElementById('regForm').addEventListener('submit', async function(e) 
     const dob = form.querySelector('input[type="date"]').value;
     const faculty = form.querySelectorAll('select')[0].value;
     const year = form.querySelectorAll('select')[1].value;
-    const stepTarget = form.querySelector('input[placeholder*="weekly step"]').value;
+    const stepTarget = form.querySelector('#regStepTarget').value;
     const affiliation = form.querySelector('input[name="affiliation"]:checked').value;
 
     // References for the secure atomic transaction counter
